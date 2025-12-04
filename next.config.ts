@@ -5,8 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Required for static export
   },
-  basePath: '/XimenaandHector',
-  assetPrefix: '/XimenaandHector/',
 };
 
 export default nextConfig;
