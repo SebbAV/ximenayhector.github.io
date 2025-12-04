@@ -13,7 +13,7 @@ export default function Hero() {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
                 style={{
-                    backgroundImage: "url('/banner.jpg')", // User needs to replace this
+                    backgroundImage: "url('/banner.JPG')",
                     filter: "brightness(0.6)"
                 }}
             />
