@@ -25,7 +25,7 @@ export default function RSVP() {
     const [errorMessage, setErrorMessage] = useState("");
 
     // TODO: Replace with your Google Apps Script Web App URL
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxHYxQRihta-f7VHLOP_BitD-reaRSAdiFbXHGgJg8l4T5yhs90OB5lXOWMKimx4gU/exec";
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzCTA62rBpk3YqPVlgFZzyHlLRcdhobBUZs1Rb-2NKip0GCZ6P24DcpxO45kVOwlDOi/exec";
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
