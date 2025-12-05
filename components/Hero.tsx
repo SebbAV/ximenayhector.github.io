@@ -26,18 +26,18 @@ export default function Hero() {
                 }}
             />
 
-            {/* Overlay Content */}
-            <div className="relative z-10 text-center px-4">
+            {/* Overlay Content - Positioned at Top */}
+            <div className="absolute top-0 left-0 right-0 z-10 text-center px-4 pt-12 md:pt-16">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl text-white mb-4 tracking-tight">
+                    <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-3 tracking-tight">
                         Ximena & Hector
                     </h1>
-                    <div className="inline-block px-8 py-3 rounded-full mb-12 md:mb-16" style={{ backgroundColor: "rgba(46, 64, 87, 0.4)", backdropFilter: "blur(10px)" }}>
-                        <p className="text-xl md:text-2xl text-white font-light tracking-widest uppercase">
+                    <div>
+                        <p className="text-xl md:text-2xl text-white/90 font-light tracking-widest uppercase">
                             ¡Nos Casamos!
                         </p>
                     </div>
