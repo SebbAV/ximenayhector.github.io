@@ -21,24 +21,19 @@ export default function Gifts() {
 
                     <div className="flex justify-center items-center gap-8 flex-wrap">
                         <a
-                            href="https://www.liverpool.com.mx/tienda/home"
+                            href="https://www.cantia.com.mx/apps/giftregistry/registry/22440"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group flex flex-col items-center gap-4 p-8 rounded-xl transition-all duration-300 border-2 border-stone-100 hover:border-[var(--classic-blue)] hover:bg-stone-50"
                         >
-                            {/* Liverpool Logo Placeholder - In a real app, use an Image component */}
-                            <div className="w-48 h-16 bg-[#e10098] flex items-center justify-center text-white font-bold text-xl rounded shadow-sm group-hover:shadow-md transition-shadow">
-                                Liverpool
+                            {/* Cantia Logo - Using their brand color (coral/salmon pink) */}
+                            <div className="w-48 h-16 bg-[#FF6B6B] flex items-center justify-center text-white font-bold text-2xl rounded shadow-sm group-hover:shadow-md transition-shadow">
+                                Cantia
                             </div>
                             <span className="transition-colors" style={{ color: "var(--classic-blue)" }}>
                                 Ver Mesa de Regalos
                             </span>
                         </a>
-
-                        {/* Placeholder for another store if needed */}
-                        {/* <div className="w-48 h-16 bg-gray-200 rounded flex items-center justify-center text-gray-400">
-              Otra Tienda
-            </div> */}
                     </div>
 
                     <div className="mt-12 p-6 bg-stone-50 rounded-lg inline-block">

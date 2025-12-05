@@ -14,7 +14,7 @@ export default function Gallery() {
         "/gallery-1.jpg",
         "/gallery-2.jpg",
         "/gallery-3.jpg",
-        "/gallery-4.jpg",
+        "/gallery-5.jpg",
     ];
 
     useEffect(() => {
@@ -46,11 +46,7 @@ export default function Gallery() {
                         <div className="flex">
                             {images.map((src, index) => (
                                 <div className="flex-[0_0_100%] min-w-0 relative aspect-[4/3] md:aspect-[16/9]" key={index}>
-                                    <div className="absolute inset-0 bg-stone-200 flex items-center justify-center text-stone-400">
-                                        {/* Placeholder for actual image */}
-                                        [Foto {index + 1}]
-                                    </div>
-                                    {/* <img src={src} alt={`Gallery image ${index + 1}`} className="w-full h-full object-cover" /> */}
+                                    <img src={src} alt={`Gallery image ${index + 1}`} className="w-full h-full object-cover" />
                                 </div>
                             ))}
                         </div>
