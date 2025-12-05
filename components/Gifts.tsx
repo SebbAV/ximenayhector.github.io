@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 
 export default function Gifts() {
     return (
-        <section className="py-20 px-4 bg-white">
+        <section className="py-20 px-4" style={{ background: "linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(46, 64, 87, 0.02) 100%)" }}>
             <div className="max-w-4xl mx-auto text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                 >
-                    <Gift className="w-12 h-12 text-stone-400 mx-auto mb-6" />
-                    <h2 className="font-serif text-4xl md:text-5xl text-stone-800 mb-6">Mesa de Regalos</h2>
+                    <Gift className="w-12 h-12 mx-auto mb-6" style={{ color: "var(--classic-blue)" }} />
+                    <h2 className="font-serif text-4xl md:text-5xl mb-6" style={{ color: "var(--classic-blue)" }}>Mesa de Regalos</h2>
                     <p className="text-stone-600 mb-12 max-w-xl mx-auto">
                         Su presencia es nuestro mejor regalo. Si desean tener un detalle con nosotros,
                         hemos registrado algunas opciones en:
@@ -24,13 +24,13 @@ export default function Gifts() {
                             href="https://www.liverpool.com.mx/tienda/home"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group flex flex-col items-center gap-4 p-8 rounded-xl hover:bg-stone-50 transition-colors duration-300 border border-stone-100"
+                            className="group flex flex-col items-center gap-4 p-8 rounded-xl transition-all duration-300 border-2 border-stone-100 hover:border-[var(--classic-blue)] hover:bg-stone-50"
                         >
                             {/* Liverpool Logo Placeholder - In a real app, use an Image component */}
                             <div className="w-48 h-16 bg-[#e10098] flex items-center justify-center text-white font-bold text-xl rounded shadow-sm group-hover:shadow-md transition-shadow">
                                 Liverpool
                             </div>
-                            <span className="text-stone-500 group-hover:text-stone-800 transition-colors">
+                            <span className="transition-colors" style={{ color: "var(--classic-blue)" }}>
                                 Ver Mesa de Regalos
                             </span>
                         </a>
@@ -44,9 +44,8 @@ export default function Gifts() {
                     <div className="mt-12 p-6 bg-stone-50 rounded-lg inline-block">
                         <p className="text-stone-600 font-medium">O si prefieren regalo en efectivo:</p>
                         <p className="text-stone-500 mt-2 font-mono text-sm">
-                            Banco: BBVA<br />
-                            Cuenta: 1234 5678 90<br />
-                            CLABE: 012 345 67890123456 7
+                            Banco: Nu<br />
+                            CLABE: 6381 8001 0151 0592 43
                         </p>
                     </div>
                 </motion.div>

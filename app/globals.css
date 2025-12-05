@@ -8,6 +8,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Pantone 19-4033 TCX - Classic Blue */
+  --classic-blue: #2E4057;
+  --classic-blue-light: #3d5570;
+  --classic-blue-lighter: #4d6a8a;
+  --classic-blue-dark: #1f2d3d;
+  --classic-blue-accent: rgba(46, 64, 87, 0.1);
 }
 
 body {

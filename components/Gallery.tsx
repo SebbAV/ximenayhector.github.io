@@ -29,7 +29,7 @@ export default function Gallery() {
     const scrollNext = () => emblaApi && emblaApi.scrollNext();
 
     return (
-        <section className="py-20 bg-stone-100 overflow-hidden">
+        <section className="py-20 overflow-hidden" style={{ background: "linear-gradient(135deg, var(--classic-blue-dark) 0%, var(--classic-blue) 100%)" }}>
             <div className="max-w-6xl mx-auto px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -37,8 +37,8 @@ export default function Gallery() {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <h2 className="font-serif text-4xl md:text-5xl text-stone-800 mb-4">Nuestra Historia</h2>
-                    <p className="text-stone-600">Momentos que nos han traído hasta aquí.</p>
+                    <h2 className="font-serif text-4xl md:text-5xl mb-4 text-white">Nuestra Historia</h2>
+                    <p className="text-white/90">Momentos que nos han traído hasta aquí.</p>
                 </motion.div>
 
                 <div className="relative">
@@ -58,7 +58,16 @@ export default function Gallery() {
 
                     <button
                         onClick={scrollPrev}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-3 rounded-full shadow-lg hover:bg-white transition-colors text-stone-800"
+                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 p-3 rounded-full shadow-lg transition-all"
+                        style={{ color: "var(--classic-blue)" }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.backgroundColor = "var(--classic-blue)";
+                            e.currentTarget.style.color = "white";
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+                            e.currentTarget.style.color = "var(--classic-blue)";
+                        }}
                         aria-label="Previous image"
                     >
                         <ChevronLeft className="w-6 h-6" />
@@ -66,7 +75,16 @@ export default function Gallery() {
 
                     <button
                         onClick={scrollNext}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-3 rounded-full shadow-lg hover:bg-white transition-colors text-stone-800"
+                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 p-3 rounded-full shadow-lg transition-all"
+                        style={{ color: "var(--classic-blue)" }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.backgroundColor = "var(--classic-blue)";
+                            e.currentTarget.style.color = "white";
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+                            e.currentTarget.style.color = "var(--classic-blue)";
+                        }}
                         aria-label="Next image"
                     >
                         <ChevronRight className="w-6 h-6" />
@@ -77,8 +95,8 @@ export default function Gallery() {
                     {images.map((_, index) => (
                         <button
                             key={index}
-                            className={`w-3 h-3 rounded-full transition-colors ${index === selectedIndex ? "bg-stone-800" : "bg-stone-300"
-                                }`}
+                            className="w-3 h-3 rounded-full transition-colors"
+                            style={{ backgroundColor: index === selectedIndex ? "var(--classic-blue)" : "#d6d3d1" }}
                             onClick={() => emblaApi && emblaApi.scrollTo(index)}
                             aria-label={`Go to slide ${index + 1}`}
                         />

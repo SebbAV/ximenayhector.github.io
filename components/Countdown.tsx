@@ -63,7 +63,13 @@ export default function Countdown({ targetDate }: CountdownProps) {
           transition={{ delay: index * 0.1 }}
           className="flex flex-col items-center"
         >
-          <div className="text-3xl sm:text-5xl font-serif font-bold text-white backdrop-blur-sm bg-black/10 rounded-lg p-2 sm:p-4 min-w-[80px] sm:min-w-[100px] text-center">
+          <div
+            className="text-3xl sm:text-5xl font-serif font-bold text-white backdrop-blur-md rounded-lg p-2 sm:p-4 min-w-[80px] sm:min-w-[100px] text-center border-2 shadow-lg"
+            style={{
+              backgroundColor: "rgba(46, 64, 87, 0.6)",
+              borderColor: "rgba(255, 255, 255, 0.3)"
+            }}
+          >
             {unit.value}
           </div>
           <span className="text-sm sm:text-base text-white/90 uppercase tracking-widest mt-2">
